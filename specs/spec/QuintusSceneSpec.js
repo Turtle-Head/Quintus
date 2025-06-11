@@ -46,7 +46,7 @@ describe("Quintus Scenes", function() {
 			expect(stage.locate(12, 4)).toBeFalsy();
 		});
 		it("can not be located in a scene given a point within the object", function() {
-			expect(stage.locate(-1, -1)).toBeTruthy();
+			expect(stage.locate(-1, -1)).toBeFalsy();
 		});
 	});
 });
